@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class CICommon {
+class CICommon {
     static func gradientImage(gradientLayer: CAGradientLayer) -> UIImage? {
         // Create UIImage by rendering gradient layer
         UIGraphicsBeginImageContext(gradientLayer.bounds.size)

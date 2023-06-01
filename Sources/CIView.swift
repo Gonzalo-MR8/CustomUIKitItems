@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class CIView: UIView {
+public class CIView: UIView {
     
     /// Tag id for the BorderGradientViewTag, so it can be retrieved later without keeping a reference to it, this number is built based on the position of each letter of "COVERVIEW" in the alphabet
     private let kBorderGradientViewTag = 31522518229523
@@ -104,11 +104,11 @@ class CIView: UIView {
         }
     }
     
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         // Corner radius

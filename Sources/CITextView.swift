@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class CITextView: UITextView {
+public class CITextView: UITextView {
 
     @IBInspectable var borderColor: UIColor = .clear {
         didSet {
@@ -69,7 +69,7 @@ class CITextView: UITextView {
         }
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
 
         // Border

@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class CISlider: UISlider {
+public class CISlider: UISlider {
 
     @IBInspectable var trackHeight: CGFloat = 8 {
         didSet {
@@ -79,7 +79,7 @@ class CISlider: UISlider {
         return CICommon.gradientImage(gradientLayer: layer)
     }
 
-    override func trackRect(forBounds bounds: CGRect) -> CGRect {
+    public override func trackRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(
             x: bounds.origin.x,
             y: bounds.origin.y,

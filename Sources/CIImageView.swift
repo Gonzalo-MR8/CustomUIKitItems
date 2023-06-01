@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CIImageView: UIImageView {
+public class CIImageView: UIImageView {
 
     @IBInspectable
     var alphaTintColor: CGFloat = 1.0 {
@@ -47,7 +47,7 @@ class CIImageView: UIImageView {
         }
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         if circularImageView {

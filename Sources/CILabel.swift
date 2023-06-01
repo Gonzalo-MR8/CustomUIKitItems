@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class CILabel: UILabel {
+public class CILabel: UILabel {
 
     @IBInspectable var borderColor: UIColor = .clear {
         didSet {
@@ -58,11 +58,11 @@ class CILabel: UILabel {
         }
     }
     
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
 
         // Border

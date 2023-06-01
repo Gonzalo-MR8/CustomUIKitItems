@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class CIButton: UIButton {
+public class CIButton: UIButton {
     
     private var gradientLayer: CAGradientLayer?
     
@@ -101,7 +101,7 @@ class CIButton: UIButton {
         }
     }
 
-    override var isEnabled: Bool {
+    public override var isEnabled: Bool {
         didSet {
             guard oldValue != isEnabled else { return }
             
@@ -117,7 +117,7 @@ class CIButton: UIButton {
         }
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         // Border
@@ -170,7 +170,7 @@ class CIButton: UIButton {
         gradient.endPoint = endPoint
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard tapAnimation else { return }
 
         self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
