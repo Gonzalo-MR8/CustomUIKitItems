@@ -6,20 +6,6 @@ import PackageDescription
 let package = Package(
     name: "CustomUIKitItems",
     platforms: [.iOS(.v13)],
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "CustomUIKitItems",
-            targets: ["CustomUIKitItems"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "CustomUIKitItems"),
-        .testTarget(
-            name: "CustomUIKitItemsTests",
-            dependencies: ["CustomUIKitItems"]),
-    ],
-    swiftLanguageVersions: [.v5]
+    products: [.library(name: "CustomUIKitItems", targets: ["CustomUIKitItems"])],
+    targets: [.target(name: "CustomUIKitItems", path: "Sources")]
 )
