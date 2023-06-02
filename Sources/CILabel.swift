@@ -8,51 +8,51 @@
 import UIKit
 
 @IBDesignable
-public class CILabel: UILabel {
+open class CILabel: UILabel {
 
-    @IBInspectable var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var roundedCorners: Bool = false {
+    @IBInspectable public var roundedCorners: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var gradientStartColor: UIColor = .clear {
+    @IBInspectable public var gradientStartColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientMidColor: UIColor? {
+    @IBInspectable public var gradientMidColor: UIColor? {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = .clear {
+    @IBInspectable public var gradientEndColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientHorizontal: Bool = false {
+    @IBInspectable public var gradientHorizontal: Bool = false {
         didSet {
             layoutSubviews()
         }

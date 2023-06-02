@@ -7,41 +7,39 @@
 
 import UIKit
 
-public class CIImageView: UIImageView {
+open class CIImageView: UIImageView {
 
-    @IBInspectable
-    var alphaTintColor: CGFloat = 1.0 {
-        didSet {
-            layoutSubviews()
-        }
-    }
-
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            layoutSubviews()
-        }
-    }
-    
-    @IBInspectable var circularImageView: Bool = false {
-        didSet {
-            layoutSubviews()
-        }
-    }
-    
-    @IBInspectable var borderColor: UIColor = .clear {
-        didSet {
-            layoutSubviews()
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var alphaTintColor: CGFloat = 1.0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var alphaBgColor: CGFloat = 1.0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
+    @IBInspectable public var circularImageView: Bool = false {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
+    @IBInspectable public var borderColor: UIColor = .clear {
+        didSet {
+            layoutSubviews()
+        }
+    }
+    
+    @IBInspectable public var borderWidth: CGFloat = 0 {
+        didSet {
+            layoutSubviews()
+        }
+    }
+
+    @IBInspectable public var alphaBgColor: CGFloat = 1.0 {
         didSet {
             layoutSubviews()
         }

@@ -8,38 +8,38 @@
 import UIKit
 
 @IBDesignable
-public class CISlider: UISlider {
+open class CISlider: UISlider {
 
-    @IBInspectable var trackHeight: CGFloat = 8 {
+    @IBInspectable public var trackHeight: CGFloat = 8 {
         didSet {
             setup()
         }
     }
 
-    @IBInspectable var gradientStartColor: UIColor = .clear {
+    @IBInspectable public var gradientStartColor: UIColor = .clear {
         didSet {
             setup()
         }
     }
     
-    @IBInspectable var gradientMidColor: UIColor? {
+    @IBInspectable public var gradientMidColor: UIColor? {
         didSet {
             setup()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = .clear {
+    @IBInspectable public var gradientEndColor: UIColor = .clear {
         didSet {
             setup()
         }
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }

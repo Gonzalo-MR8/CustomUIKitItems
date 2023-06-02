@@ -8,62 +8,57 @@
 import UIKit
 
 @IBDesignable
-public class CITextView: UITextView {
+open class CITextView: UITextView {
 
-    @IBInspectable var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var roundedCorners: Bool = false {
+    @IBInspectable public var roundedCorners: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var horInsets: CGFloat = 12.0 {
+    @IBInspectable public var horInsets: CGFloat = 12.0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var shadowColor: UIColor = .clear {
+    @IBInspectable public var shadowColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var shadowOpacity: Float = 0 {
+    @IBInspectable public var shadowOpacity: Float = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var shadowOffset: CGSize = .zero {
+    @IBInspectable public var shadowOffset: CGSize = .zero {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable
-    var shadowRadius: CGFloat = 0 {
+    @IBInspectable public var shadowRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }

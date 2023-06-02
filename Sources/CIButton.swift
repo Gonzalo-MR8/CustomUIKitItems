@@ -8,94 +8,89 @@
 import UIKit
 
 @IBDesignable
-public class CIButton: UIButton {
+open class CIButton: UIButton {
     
     private var gradientLayer: CAGradientLayer?
     
-    @IBInspectable
-    var enabledBgColor: UIColor?
+    @IBInspectable public var enabledBgColor: UIColor?
     
-    @IBInspectable
-    var disabledBgColor: UIColor?
+    @IBInspectable public var disabledBgColor: UIColor?
     
-    @IBInspectable
-    var alphaDisabledBgColor: CGFloat = 1.0
+    @IBInspectable public var alphaDisabledBgColor: CGFloat = 1.0
     
-    @IBInspectable
-    var alphaBgColor: CGFloat = 1.0 {
+    @IBInspectable public var alphaBgColor: CGFloat = 1.0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable
-    var alphaTintColor: CGFloat = 1.0 {
+    @IBInspectable public var alphaTintColor: CGFloat = 1.0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var roundedCorners: Bool = false {
+    @IBInspectable public var roundedCorners: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientStartColor: UIColor = .clear {
+    @IBInspectable public var gradientStartColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = .clear {
+    @IBInspectable public var gradientEndColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowColor: UIColor = .clear {
+    @IBInspectable public var shadowColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowOpacity: Float = 0 {
+    @IBInspectable public var shadowOpacity: Float = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowOffset: CGSize = .zero {
+    @IBInspectable public var shadowOffset: CGSize = .zero {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowRadius: CGFloat = 0 {
+    @IBInspectable public var shadowRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var tapAnimation: Bool = false {
+    @IBInspectable public var tapAnimation: Bool = false {
         didSet {
             layoutSubviews()
         }

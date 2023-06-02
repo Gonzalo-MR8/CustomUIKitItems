@@ -8,97 +8,96 @@
 import UIKit
 
 @IBDesignable
-public class CIView: UIView {
+open class CIView: UIView {
     
     /// Tag id for the BorderGradientViewTag, so it can be retrieved later without keeping a reference to it, this number is built based on the position of each letter of "COVERVIEW" in the alphabet
     private let kBorderGradientViewTag = 31522518229523
     
-    @IBInspectable
-    var alphaBgColor: CGFloat = 1.0 {
+    @IBInspectable public var alphaBgColor: CGFloat = 1.0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var roundedBorders: Bool = false {
+    @IBInspectable public var roundedBorders: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var topRoundedBorders: Bool = false {
+    @IBInspectable public var topRoundedBorders: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var borderGradient: Bool = false {
+    @IBInspectable public var borderGradient: Bool = false {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowColor: UIColor = .clear {
+    @IBInspectable public var shadowColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowOpacity: Float = 0 {
+    @IBInspectable public var shadowOpacity: Float = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowOffset: CGSize = .zero {
+    @IBInspectable public var shadowOffset: CGSize = .zero {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var shadowRadius: CGFloat = 0 {
+    @IBInspectable public var shadowRadius: CGFloat = 0 {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientStartColor: UIColor = .clear {
+    @IBInspectable public var gradientStartColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientMidColor: UIColor? {
+    @IBInspectable public var gradientMidColor: UIColor? {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = .clear {
+    @IBInspectable public var gradientEndColor: UIColor = .clear {
         didSet {
             layoutSubviews()
         }
     }
     
-    @IBInspectable var gradientHorizontal: Bool = false {
+    @IBInspectable public var gradientHorizontal: Bool = false {
         didSet {
             layoutSubviews()
         }
