@@ -12,9 +12,9 @@ This library will allow you to modify in real time the different UIKit items wit
 
 ## Example
 
-There are no examples available from this repository yet.
+There are no examples available in this repository yet, but it works like a normal UIKit Item with more functionality, both from inspectors and code.
 
-As an alternative you can see how to use it in the AstroData repository: https://github.com/Gonzalo-MR8/AstroData.git
+As an alternative you can see how I use it in AstroData repository: https://github.com/Gonzalo-MR8/AstroData.git
 
 ## Installation
 
@@ -37,10 +37,15 @@ And then run:
 ```ruby
 pod install
 ```
-After installing the cocoapod into your project import CustomUIKitItems with
+After installing the cocoapod into your project import CustomUIKitItems with:
 ```swift
 import CustomUIKitItems
 ```
+or with:
+```swift
+@_exported import CustomUIKitItems
+```
+if you want to import all elements throughout the whole project, replacing all normal elements by the enhanced elements from the library
 
 ## Author
 
