@@ -49,7 +49,7 @@ if you want to import all elements throughout the whole project, replacing all n
 
 ## Author
 
-Gonzalo-MR8, gonzamarreg@gmail.com
+Gonzalo-MR8, gonzalomr.dev@gmail.com
 
 ## License
 
